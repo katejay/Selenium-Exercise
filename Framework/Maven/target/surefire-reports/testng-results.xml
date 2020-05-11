@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-05-10T16:42:45Z" name="Suite" finished-at="2020-05-10T16:42:45Z" duration-ms="44">
+    <groups>
+    </groups>
+    <test started-at="2020-05-10T16:42:45Z" name="Test" finished-at="2020-05-10T16:42:45Z" duration-ms="44">
+      <class name="mavenproject.SelectTest">
+        <test-method signature="selectProduct()[pri:0, instance:mavenproject.SelectTest@15aab8c6]" started-at="2020-05-10T22:12:45Z" name="selectProduct" finished-at="2020-05-10T22:12:45Z" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectProduct -->
+        <test-method signature="selectService()[pri:0, instance:mavenproject.SelectTest@15aab8c6]" started-at="2020-05-10T22:12:45Z" name="selectService" finished-at="2020-05-10T22:12:45Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectService -->
+      </class> <!-- mavenproject.SelectTest -->
+      <class name="mavenproject.CancelTest">
+        <test-method signature="cancelOrder()[pri:0, instance:mavenproject.CancelTest@33990a0c]" started-at="2020-05-10T22:12:45Z" name="cancelOrder" finished-at="2020-05-10T22:12:45Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cancelOrder -->
+        <test-method signature="cancelService()[pri:0, instance:mavenproject.CancelTest@33990a0c]" started-at="2020-05-10T22:12:45Z" name="cancelService" finished-at="2020-05-10T22:12:45Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cancelService -->
+      </class> <!-- mavenproject.CancelTest -->
+      <class name="mavenproject.LoginTest">
+        <test-method signature="AdminLogin()[pri:0, instance:mavenproject.LoginTest@57af006c]" started-at="2020-05-10T22:12:45Z" name="AdminLogin" finished-at="2020-05-10T22:12:45Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AdminLogin -->
+        <test-method signature="userLogin()[pri:0, instance:mavenproject.LoginTest@57af006c]" started-at="2020-05-10T22:12:45Z" name="userLogin" finished-at="2020-05-10T22:12:45Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLogin -->
+      </class> <!-- mavenproject.LoginTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
