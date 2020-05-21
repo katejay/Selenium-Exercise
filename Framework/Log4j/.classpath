@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="resource"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Selenium/Files/apache-log4j-2.13.3-bin/log4j-api-2.13.3.jar"/>
+	<classpathentry kind="lib" path="C:/Selenium/Files/apache-log4j-2.13.3-bin/log4j-core-2.13.3.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

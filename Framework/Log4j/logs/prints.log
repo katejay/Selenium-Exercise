@@ -1,0 +1,3 @@
+17:34:59.652 [main] INFO  beta.Demo2 - Button is displayed
+17:34:59.652 [main] ERROR beta.Demo2 - Button is not display
+17:34:59.652 [main] FATAL beta.Demo2 - Button is missing
