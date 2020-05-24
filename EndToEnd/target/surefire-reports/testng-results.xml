@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-05-24T08:17:19Z" name="Suite" finished-at="2020-05-24T08:17:38Z" duration-ms="18894">
+    <groups>
+    </groups>
+    <test started-at="2020-05-24T08:17:19Z" name="Login" finished-at="2020-05-24T08:17:24Z" duration-ms="5146">
+      <class name="endtoend.LoginUser">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:endtoend.LoginUser@62679465]" started-at="2020-05-24T08:17:19Z" name="initialize" finished-at="2020-05-24T08:17:22Z" duration-ms="3337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="getUserLogin()[pri:0, instance:endtoend.LoginUser@62679465]" started-at="2020-05-24T08:17:22Z" name="getUserLogin" finished-at="2020-05-24T08:17:24Z" duration-ms="1711" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserLogin -->
+        <test-method is-config="true" signature="shutdown()[pri:0, instance:endtoend.LoginUser@62679465]" started-at="2020-05-24T08:17:24Z" name="shutdown" finished-at="2020-05-24T08:17:24Z" duration-ms="77" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutdown -->
+      </class> <!-- endtoend.LoginUser -->
+    </test> <!-- Login -->
+    <test started-at="2020-05-24T08:17:24Z" name="Signup" finished-at="2020-05-24T08:17:30Z" duration-ms="5829">
+      <class name="endtoend.SignUpUser">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:endtoend.SignUpUser@5f4d427e]" started-at="2020-05-24T08:17:24Z" name="initialize" finished-at="2020-05-24T08:17:27Z" duration-ms="3158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="getUserSignUp()[pri:0, instance:endtoend.SignUpUser@5f4d427e]" started-at="2020-05-24T08:17:27Z" name="getUserSignUp" finished-at="2020-05-24T08:17:30Z" duration-ms="2573" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserSignUp -->
+        <test-method is-config="true" signature="shutdown()[pri:0, instance:endtoend.SignUpUser@5f4d427e]" started-at="2020-05-24T08:17:30Z" name="shutdown" finished-at="2020-05-24T08:17:30Z" duration-ms="98" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutdown -->
+      </class> <!-- endtoend.SignUpUser -->
+    </test> <!-- Signup -->
+    <test started-at="2020-05-24T08:17:30Z" name="Search" finished-at="2020-05-24T08:17:38Z" duration-ms="7575">
+      <class name="endtoend.SearchUser">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:endtoend.SearchUser@10c8f62]" started-at="2020-05-24T08:17:30Z" name="initialize" finished-at="2020-05-24T08:17:33Z" duration-ms="3050" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="getUserSearch()[pri:0, instance:endtoend.SearchUser@10c8f62]" started-at="2020-05-24T08:17:33Z" name="getUserSearch" finished-at="2020-05-24T08:17:37Z" duration-ms="4000" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserSearch -->
+        <test-method signature="getValidateUserName()[pri:0, instance:endtoend.SearchUser@10c8f62]" started-at="2020-05-24T08:17:37Z" name="getValidateUserName" finished-at="2020-05-24T08:17:37Z" duration-ms="75" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [jaykate] but found [katejay]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [jaykate] but found [katejay]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at endtoend.SearchUser.getValidateUserName(SearchUser.java:52)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getValidateUserName -->
+        <test-method is-config="true" signature="shutdown()[pri:0, instance:endtoend.SearchUser@10c8f62]" started-at="2020-05-24T08:17:38Z" name="shutdown" finished-at="2020-05-24T08:17:38Z" duration-ms="50" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutdown -->
+      </class> <!-- endtoend.SearchUser -->
+    </test> <!-- Search -->
+  </suite> <!-- Suite -->
+</testng-results>
