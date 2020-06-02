@@ -1,0 +1,9 @@
+13:45:27.031 [main] INFO  endtoend.LoginUser - User name successfully provided
+13:45:27.098 [main] INFO  endtoend.LoginUser - Password successfully provided
+13:45:27.503 [main] ERROR endtoend.LoginUser - Wrong User name & Password
+13:45:33.112 [main] INFO  endtoend.SignUpUser - User name successfully provided
+13:45:33.195 [main] INFO  endtoend.SignUpUser - Email id successfully provided
+13:45:33.261 [main] INFO  endtoend.SignUpUser - Password successfully provided
+13:45:40.135 [main] INFO  endtoend.SearchUser - Successfully user identify
+13:45:40.139 [main] ERROR endtoend.SearchUser - expected [jaykate] but found [katejay]
+13:47:23.788 [main] INFO  endtoend.LoginUser - User name successfully provided

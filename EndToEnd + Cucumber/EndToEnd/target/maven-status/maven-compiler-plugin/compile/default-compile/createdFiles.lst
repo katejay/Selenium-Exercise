@@ -1,0 +1,6 @@
+endtoend\pageobject\HomePage.class
+endtoend\pageobject\LoginPage.class
+endtoend\resources\Browser.class
+endtoend\resources\ExtentReport.class
+endtoend\pageobject\SearchPage.class
+endtoend\pageobject\SignUpPage.class
