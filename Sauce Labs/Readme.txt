@@ -1,0 +1,5 @@
+Imp Links : 
+
+https://wiki.saucelabs.com/display/DOCS/Platform+Configurator#/
+
+https://wiki.saucelabs.com/display/DOCS/Getting+Started+with+Selenium+for+Automated+Website+Testing
