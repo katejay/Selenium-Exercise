@@ -1,0 +1,1 @@
+EndToEnd + TestNG + Maven + Data Driven + Extent Report + Log4j + POM + Cucumber

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!DOCTYPE project [
+]>
+
+<project name="Selenium" default="usage" basedir=".">
+
+	<!-- ========== Initialize Properties =================================== -->
+		<property environment="env"/>	
+		<property name="ws.home" value="${basedir}"/>
+		<property name="ws.jars" value="${basedir}/jar"/>
+		<property name="test.dest" value="${ws.home}/build"/>	
+		<property name="test.src" value="${ws.home}/src"/>	
+		<property name="ng.result" value="test-output"/>
+	
+	<target name="setClassPath" unless="test.classpath">
+		<path id="classpath_jars">
+			<fileset dir="${ws.jars}" includes="*.jar"/>
+		</path>	
+		<pathconvert pathsep=":"
+			property="test.classpath"
+		refid="classpath_jars"/>
+	</target>
+		
+	<!-- init -->
+	<target name="init" depends="setClassPath">
+		<tstamp>
+			<format property="start.time" pattern="MM/dd/yyyy hh:mm aa" />
+		</tstamp>
+		<condition property="ANT"
+			value="${env.ANT_HOME}/bin/ant.bat"
+			else="${env.ANT_HOME}/bin/ant">
+			<os family="windows" />
+		</condition>
+		<taskdef name="testng" classpath="${test.classpath}"
+		classname="org.testng.TestNGAntTask" />
+	</target>
+	
+	<!-- clean -->
+	<target name="clean">
+		<delete dir="${test.dest}"/>
+	</target>
+	
+	<!-- compile -->
+	<target name="compile" depends="init, clean" >
+		<delete includeemptydirs="true" quiet="true">
+			<fileset dir="${test.dest}" includes="**/*"/>
+		</delete>
+		<echo message="making directory..."/>
+		<mkdir dir="${test.dest}"/>
+		<echo message="classpath------: ${test.classpath}"/>
+		<echo message="compiling..."/>
+		<javac
+			debug="true"
+			destdir="${test.dest}"
+			srcdir="${test.src}"
+			target="1.7"
+			classpath="${test.classpath}"
+			>
+		</javac>
+	</target>
+	
+	<!-- build -->
+	<target name="build" depends="init">
+	</target>
+		
+	<!-- run -->
+	<target name="run" depends="compile">
+		<testng classpath="${test.classpath}:${test.dest}" suitename="suite">
+		<xmlfileset dir="${ws.home}" includes="testng.xml"/>
+		</testng>
+	</target>
+	
+	<target name="usage">
+		<echo>
+		ant run will execute the test
+		</echo>
+	</target>
+	
+	<path id="test.c">
+		<fileset dir="${ws.jars}" includes="*.jar"/>
+	</path>
+	
+</project>

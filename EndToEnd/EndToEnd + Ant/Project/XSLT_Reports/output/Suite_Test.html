@@ -1,0 +1,1220 @@
+<html xmlns:math="http://exslt.org/math" xmlns:testng="http://testng.org">
+   <head>
+      <title>TestNG Results</title>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+      <meta http-equiv="pragma" content="no-cache"></meta>
+      <meta http-equiv="cache-control" content="max-age=0"></meta>
+      <meta http-equiv="cache-control" content="no-cache"></meta>
+      <meta http-equiv="cache-control" content="no-store"></meta>
+      <LINK rel="stylesheet" href="style.css"></LINK>
+      <script type="text/javascript" src="main.js"></script>
+   </head>
+   <body>
+      <table width="100%" style="font-size: 16px; margin-bottom: 10px;" cellspacing="1">
+         <tr>
+            <td width="100%">
+               Test case
+               
+               <b>Test</b>
+            </td>
+            <td style="background-color: #FFBBBB; padding: 3px 3px 3px 0;" align="center">
+               <div style="width: 50px;">2</div>
+            </td>
+            <td style="background-color: lightgreen; padding: 3px 3px 3px 0;" align="center">
+               <div style="width: 50px;">2</div>
+            </td>
+            <td style="background-color: #FFFFBB; padding: 3px 3px 3px 0;" align="center">
+               <div style="width: 50px;">0</div>
+            </td>
+            <td align="center" style="background-color: #eaf0f7; padding: 3px 3px 3px 0;">
+               <div style="width: 50px;">4</div>
+            </td>
+            <td align="center"
+                style="font-weight: bold; background-color: #eaf0f7; padding: 3px 3px 3px 0;">
+               <div style="width: 50px;">50%</div>
+            </td>
+            <td style="background-color: #eaf0f7; padding: 3px 3px 3px 0;" align="center"
+                nowrap="true">18s
+               
+            </td>
+         </tr>
+      </table>
+      <div style="width: 200px;">
+         <label for="groupMethodsCheckBox" style="font-weight: bold; margin: 0;">
+            <input id="groupMethodsCheckBox" type="checkbox" onclick="switchTestMethodsView(this)"></input>
+            Group by class
+            
+         </label>
+         <br></br>
+         <label for="methodsFilter_ALL" style="font-weight: bold; margin: 0;">
+            <input id="methodsFilter_ALL" type="checkbox"
+                   onclick="testMethodsFilterChanged(this, 'ALL')"></input>
+            All
+            
+         </label>
+      </div>
+      <label for="methodsFilter_FAIL" style="margin-left: 20px;">
+         <input id="methodsFilter_FAIL" type="checkbox"
+                onclick="testMethodsFilterChanged(this, 'FAIL')"
+                checked=""></input>
+         Failed
+         
+      </label>
+      <label for="methodsFilter_PASS">
+         <input id="methodsFilter_PASS" type="checkbox"
+                onclick="testMethodsFilterChanged(this, 'PASS')"
+                checked=""></input>
+         Passed
+         
+      </label>
+      <label for="methodsFilter_SKIP">
+         <input id="methodsFilter_SKIP" type="checkbox"
+                onclick="testMethodsFilterChanged(this, 'SKIP')"
+                checked=""></input>
+         Skipped
+         
+      </label>
+      <label for="methodsFilter_CONF">
+         <input id="methodsFilter_CONF" type="checkbox"
+                onclick="testMethodsFilterChanged(this, 'CONF')"></input>
+         Config
+         
+      </label>
+      <br></br>
+      <div id="testMethodsByStatus">
+         <table class="testMethodsTable" cellpadding="0" cellspacing="0">
+            <tr class="methodsTableHeader">
+               <td width="100%">Name</td>
+               <td nowrap="true">Started</td>
+               <td nowrap="true">Duration</td>
+               <td>Exception</td>
+            </tr>
+            <tr id="endtoend.SearchUser_getUserSearch_byStatus_failed_FAIL1_row"
+                class="testMethodStatusFAIL">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('endtoend.SearchUser_getUserSearch_byStatus_failed_FAIL1_details')">getUserSearch()</a>
+               </td>
+               <td nowrap="true">18:18:06</td>
+               <td nowrap="true" align="right">2s
+                  
+               </td>
+               <td nowrap="true">
+                  <a onclick="toggleDetailsVisibility('endtoend.SearchUser_getUserSearch_byStatus_failed_FAIL1_exception')">org.openqa.selenium.NoSuchElementException: 
+                     no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='mr-1']"}
+                     (Session info: chrome=83.0.4103.97)
+                     For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+                     Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+                     System info: host: 'JAY', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version:
+                     '13.0.1'
+                     Driver info: org.openqa.selenium.chrome.ChromeDriver
+                     Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion:
+                     83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\jayka\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58402},
+                     javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS,
+                     proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000},
+                     unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+                     Session ID: f1647b499e63bb5b6d74c32e5e2318e6
+                     *** Element info: {Using=xpath, value=//a[@class='mr-1']}
+                     
+                  </a>
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="endtoend.SearchUser_getUserSearch_byStatus_failed_FAIL1_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>getUserSearch
+                     </div>
+                     <div>
+                        <b>Signature: </b>getUserSearch()[pri:0, instance:endtoend.SearchUser@5e5d171f]
+                     </div>
+                     <div>
+                        <b>Start time: </b>18:18:06
+                     </div>
+                     <div>
+                        <b>End time: </b>18:18:09
+                     </div>
+                     <div>
+                        <b>Duration: </b>2s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="endtoend.SearchUser_getUserSearch_byStatus_failed_FAIL1_exception"
+                       class="testMethodDetails">
+                     <pre style="padding: 5px; margin: 0;">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='mr-1']"}
+                        (Session info: chrome=83.0.4103.97)
+                        For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+                        Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+                        System info: host: 'JAY', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version:
+                        '13.0.1'
+                        Driver info: org.openqa.selenium.chrome.ChromeDriver
+                        Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion:
+                        83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\jayka\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58402},
+                        javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS,
+                        proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000},
+                        unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+                        Session ID: f1647b499e63bb5b6d74c32e5e2318e6
+                        *** Element info: {Using=xpath, value=//a[@class='mr-1']}
+                        	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+                        	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+                        	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+                        	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+                        	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+                        	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+                        	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+                        	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+                        	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+                        	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+                        	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+                        	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+                        	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+                        	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+                        	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+                        	at pageobject.SearchPage.selectUser(SearchPage.java:28)
+                        	at endtoend.SearchUser.getUserSearch(SearchUser.java:39)
+                        	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                        	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+                        	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+                        	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+                        	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+                        	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+                        	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+                        	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+                        	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+                        	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+                        	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+                        	at org.testng.TestRunner.run(TestRunner.java:617)
+                        	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+                        	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+                        	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+                        	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+                        	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+                        	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+                        	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+                        	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+                        	at org.testng.TestNG.run(TestNG.java:1030)
+                        	at org.testng.TestNG.privateMain(TestNG.java:1337)
+                        	at org.testng.TestNG.main(TestNG.java:1306)
+                     </pre>
+                  </div>
+               </td>
+            </tr>
+            <tr id="endtoend.SearchUser_getValidateUserName_byStatus_failed_FAIL2_row"
+                class="testMethodStatusFAIL">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('endtoend.SearchUser_getValidateUserName_byStatus_failed_FAIL2_details')">getValidateUserName()</a>
+               </td>
+               <td nowrap="true">18:18:09</td>
+               <td nowrap="true" align="right">14 ms
+                  
+               </td>
+               <td nowrap="true">
+                  <a onclick="toggleDetailsVisibility('endtoend.SearchUser_getValidateUserName_byStatus_failed_FAIL2_exception')">org.openqa.selenium.NoSuchElementException: 
+                     no such element: Unable to locate element: {"method":"xpath","selector":"//span[@itemprop='additionalName']"}
+                     (Session info: chrome=83.0.4103.97)
+                     For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+                     Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+                     System info: host: 'JAY', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version:
+                     '13.0.1'
+                     Driver info: org.openqa.selenium.chrome.ChromeDriver
+                     Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion:
+                     83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\jayka\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58402},
+                     javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS,
+                     proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000},
+                     unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+                     Session ID: f1647b499e63bb5b6d74c32e5e2318e6
+                     *** Element info: {Using=xpath, value=//span[@itemprop='additionalName']}
+                     
+                  </a>
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="endtoend.SearchUser_getValidateUserName_byStatus_failed_FAIL2_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>getValidateUserName
+                     </div>
+                     <div>
+                        <b>Signature: </b>getValidateUserName()[pri:0, instance:endtoend.SearchUser@5e5d171f]
+                     </div>
+                     <div>
+                        <b>Start time: </b>18:18:09
+                     </div>
+                     <div>
+                        <b>End time: </b>18:18:09
+                     </div>
+                     <div>
+                        <b>Duration: </b>14 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="endtoend.SearchUser_getValidateUserName_byStatus_failed_FAIL2_exception"
+                       class="testMethodDetails">
+                     <pre style="padding: 5px; margin: 0;">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@itemprop='additionalName']"}
+                        (Session info: chrome=83.0.4103.97)
+                        For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+                        Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+                        System info: host: 'JAY', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version:
+                        '13.0.1'
+                        Driver info: org.openqa.selenium.chrome.ChromeDriver
+                        Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion:
+                        83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\jayka\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58402},
+                        javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS,
+                        proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000},
+                        unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+                        Session ID: f1647b499e63bb5b6d74c32e5e2318e6
+                        *** Element info: {Using=xpath, value=//span[@itemprop='additionalName']}
+                        	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+                        	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+                        	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+                        	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+                        	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+                        	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+                        	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+                        	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+                        	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+                        	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+                        	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+                        	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+                        	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+                        	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+                        	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+                        	at pageobject.SearchPage.getUsername(SearchPage.java:33)
+                        	at endtoend.SearchUser.getValidateUserName(SearchUser.java:46)
+                        	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                        	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+                        	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+                        	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+                        	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+                        	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+                        	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+                        	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+                        	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+                        	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+                        	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+                        	at org.testng.TestRunner.run(TestRunner.java:617)
+                        	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+                        	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+                        	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+                        	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+                        	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+                        	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+                        	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+                        	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+                        	at org.testng.TestNG.run(TestNG.java:1030)
+                        	at org.testng.TestNG.privateMain(TestNG.java:1337)
+                        	at org.testng.TestNG.main(TestNG.java:1306)
+                     </pre>
+                  </div>
+               </td>
+            </tr>
+            <tr id="endtoend.SignUpUser_getUserSignUp_byStatus_passed_PASS1_row"
+                class="testMethodStatusPASS">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('endtoend.SignUpUser_getUserSignUp_byStatus_passed_PASS1_details')">getUserSignUp()</a>
+               </td>
+               <td nowrap="true">18:18:09</td>
+               <td nowrap="true" align="right">4s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="endtoend.SignUpUser_getUserSignUp_byStatus_passed_PASS1_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>getUserSignUp
+                     </div>
+                     <div>
+                        <b>Signature: </b>getUserSignUp()[pri:0, instance:endtoend.SignUpUser@2a5c8d3f]
+                     </div>
+                     <div>
+                        <b>Start time: </b>18:18:09
+                     </div>
+                     <div>
+                        <b>End time: </b>18:18:12
+                     </div>
+                     <div>
+                        <b>Duration: </b>4s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="endtoend.LoginUser_initialize_byStatus_passed_PASS2_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('endtoend.LoginUser_initialize_byStatus_passed_PASS2_details')">initialize()</a>
+               </td>
+               <td nowrap="true">18:17:57</td>
+               <td nowrap="true" align="right">3s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="endtoend.LoginUser_initialize_byStatus_passed_PASS2_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>initialize
+                     </div>
+                     <div>
+                        <b>Signature: </b>initialize()[pri:0, instance:endtoend.LoginUser@24313fcc]
+                     </div>
+                     <div>
+                        <b>Start time: </b>18:17:57
+                     </div>
+                     <div>
+                        <b>End time: </b>18:18:00
+                     </div>
+                     <div>
+                        <b>Duration: </b>3s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="endtoend.LoginUser_initialize_byStatus_passed_PASS3_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('endtoend.LoginUser_initialize_byStatus_passed_PASS3_details')">initialize()</a>
+               </td>
+               <td nowrap="true">18:18:00</td>
+               <td nowrap="true" align="right">3s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="endtoend.LoginUser_initialize_byStatus_passed_PASS3_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>initialize
+                     </div>
+                     <div>
+                        <b>Signature: </b>initialize()[pri:0, instance:endtoend.SearchUser@5e5d171f]
+                     </div>
+                     <div>
+                        <b>Start time: </b>18:18:00
+                     </div>
+                     <div>
+                        <b>End time: </b>18:18:03
+                     </div>
+                     <div>
+                        <b>Duration: </b>3s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="endtoend.LoginUser_initialize_byStatus_passed_PASS4_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('endtoend.LoginUser_initialize_byStatus_passed_PASS4_details')">initialize()</a>
+               </td>
+               <td nowrap="true">18:18:03</td>
+               <td nowrap="true" align="right">3s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="endtoend.LoginUser_initialize_byStatus_passed_PASS4_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>initialize
+                     </div>
+                     <div>
+                        <b>Signature: </b>initialize()[pri:0, instance:endtoend.SignUpUser@2a5c8d3f]
+                     </div>
+                     <div>
+                        <b>Start time: </b>18:18:03
+                     </div>
+                     <div>
+                        <b>End time: </b>18:18:06
+                     </div>
+                     <div>
+                        <b>Duration: </b>3s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="endtoend.LoginUser_getUserLogin_byStatus_passed_PASS5_row"
+                class="testMethodStatusPASS">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('endtoend.LoginUser_getUserLogin_byStatus_passed_PASS5_details')">getUserLogin()</a>
+               </td>
+               <td nowrap="true">18:18:12</td>
+               <td nowrap="true" align="right">2s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="endtoend.LoginUser_getUserLogin_byStatus_passed_PASS5_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>getUserLogin
+                     </div>
+                     <div>
+                        <b>Signature: </b>getUserLogin()[pri:0, instance:endtoend.LoginUser@24313fcc]
+                     </div>
+                     <div>
+                        <b>Start time: </b>18:18:12
+                     </div>
+                     <div>
+                        <b>End time: </b>18:18:14
+                     </div>
+                     <div>
+                        <b>Duration: </b>2s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="endtoend.LoginUser_shutdown_byStatus_passed_PASS6_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('endtoend.LoginUser_shutdown_byStatus_passed_PASS6_details')">shutdown()</a>
+               </td>
+               <td nowrap="true">18:18:14</td>
+               <td nowrap="true" align="right">108 ms
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="endtoend.LoginUser_shutdown_byStatus_passed_PASS6_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>shutdown
+                     </div>
+                     <div>
+                        <b>Signature: </b>shutdown()[pri:0, instance:endtoend.LoginUser@24313fcc]
+                     </div>
+                     <div>
+                        <b>Start time: </b>18:18:14
+                     </div>
+                     <div>
+                        <b>End time: </b>18:18:14
+                     </div>
+                     <div>
+                        <b>Duration: </b>108 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="endtoend.LoginUser_shutdown_byStatus_passed_PASS7_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('endtoend.LoginUser_shutdown_byStatus_passed_PASS7_details')">shutdown()</a>
+               </td>
+               <td nowrap="true">18:18:14</td>
+               <td nowrap="true" align="right">125 ms
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="endtoend.LoginUser_shutdown_byStatus_passed_PASS7_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>shutdown
+                     </div>
+                     <div>
+                        <b>Signature: </b>shutdown()[pri:0, instance:endtoend.SearchUser@5e5d171f]
+                     </div>
+                     <div>
+                        <b>Start time: </b>18:18:14
+                     </div>
+                     <div>
+                        <b>End time: </b>18:18:14
+                     </div>
+                     <div>
+                        <b>Duration: </b>125 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="endtoend.LoginUser_shutdown_byStatus_passed_PASS8_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('endtoend.LoginUser_shutdown_byStatus_passed_PASS8_details')">shutdown()</a>
+               </td>
+               <td nowrap="true">18:18:14</td>
+               <td nowrap="true" align="right">192 ms
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="endtoend.LoginUser_shutdown_byStatus_passed_PASS8_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>shutdown
+                     </div>
+                     <div>
+                        <b>Signature: </b>shutdown()[pri:0, instance:endtoend.SignUpUser@2a5c8d3f]
+                     </div>
+                     <div>
+                        <b>Start time: </b>18:18:14
+                     </div>
+                     <div>
+                        <b>End time: </b>18:18:15
+                     </div>
+                     <div>
+                        <b>Duration: </b>192 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+         </table>
+      </div>
+      <div id="testMethodsByClass" style="display: none;">
+         <table class="testMethodsTable" cellpadding="0" cellspacing="0">
+            <tr>
+               <td colspan="4">
+                  <h3 style="display: inline;">endtoend.LoginUser</h3>
+               </td>
+            </tr>
+            <tr class="methodsTableHeader">
+               <td width="100%">Name</td>
+               <td nowrap="true">Started</td>
+               <td nowrap="true">Duration</td>
+               <td>Exception</td>
+            </tr>
+            <tr id="endtoend.LoginUser_initialize_byClass_PASS1_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('endtoend.LoginUser_initialize_byClass_PASS1_details')">initialize()</a>
+               </td>
+               <td nowrap="true">18:17:57</td>
+               <td nowrap="true" align="right">3s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="endtoend.LoginUser_initialize_byClass_PASS1_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>initialize
+                     </div>
+                     <div>
+                        <b>Signature: </b>initialize()[pri:0, instance:endtoend.LoginUser@24313fcc]
+                     </div>
+                     <div>
+                        <b>Start time: </b>18:17:57
+                     </div>
+                     <div>
+                        <b>End time: </b>18:18:00
+                     </div>
+                     <div>
+                        <b>Duration: </b>3s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="endtoend.LoginUser_initialize_byClass_PASS2_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('endtoend.LoginUser_initialize_byClass_PASS2_details')">initialize()</a>
+               </td>
+               <td nowrap="true">18:18:00</td>
+               <td nowrap="true" align="right">3s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="endtoend.LoginUser_initialize_byClass_PASS2_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>initialize
+                     </div>
+                     <div>
+                        <b>Signature: </b>initialize()[pri:0, instance:endtoend.SearchUser@5e5d171f]
+                     </div>
+                     <div>
+                        <b>Start time: </b>18:18:00
+                     </div>
+                     <div>
+                        <b>End time: </b>18:18:03
+                     </div>
+                     <div>
+                        <b>Duration: </b>3s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="endtoend.LoginUser_initialize_byClass_PASS3_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('endtoend.LoginUser_initialize_byClass_PASS3_details')">initialize()</a>
+               </td>
+               <td nowrap="true">18:18:03</td>
+               <td nowrap="true" align="right">3s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="endtoend.LoginUser_initialize_byClass_PASS3_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>initialize
+                     </div>
+                     <div>
+                        <b>Signature: </b>initialize()[pri:0, instance:endtoend.SignUpUser@2a5c8d3f]
+                     </div>
+                     <div>
+                        <b>Start time: </b>18:18:03
+                     </div>
+                     <div>
+                        <b>End time: </b>18:18:06
+                     </div>
+                     <div>
+                        <b>Duration: </b>3s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="endtoend.LoginUser_getUserLogin_byClass_PASS4_row"
+                class="testMethodStatusPASS">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('endtoend.LoginUser_getUserLogin_byClass_PASS4_details')">getUserLogin()</a>
+               </td>
+               <td nowrap="true">18:18:12</td>
+               <td nowrap="true" align="right">2s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="endtoend.LoginUser_getUserLogin_byClass_PASS4_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>getUserLogin
+                     </div>
+                     <div>
+                        <b>Signature: </b>getUserLogin()[pri:0, instance:endtoend.LoginUser@24313fcc]
+                     </div>
+                     <div>
+                        <b>Start time: </b>18:18:12
+                     </div>
+                     <div>
+                        <b>End time: </b>18:18:14
+                     </div>
+                     <div>
+                        <b>Duration: </b>2s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="endtoend.LoginUser_shutdown_byClass_PASS5_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('endtoend.LoginUser_shutdown_byClass_PASS5_details')">shutdown()</a>
+               </td>
+               <td nowrap="true">18:18:14</td>
+               <td nowrap="true" align="right">108 ms
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="endtoend.LoginUser_shutdown_byClass_PASS5_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>shutdown
+                     </div>
+                     <div>
+                        <b>Signature: </b>shutdown()[pri:0, instance:endtoend.LoginUser@24313fcc]
+                     </div>
+                     <div>
+                        <b>Start time: </b>18:18:14
+                     </div>
+                     <div>
+                        <b>End time: </b>18:18:14
+                     </div>
+                     <div>
+                        <b>Duration: </b>108 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="endtoend.LoginUser_shutdown_byClass_PASS6_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('endtoend.LoginUser_shutdown_byClass_PASS6_details')">shutdown()</a>
+               </td>
+               <td nowrap="true">18:18:14</td>
+               <td nowrap="true" align="right">125 ms
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="endtoend.LoginUser_shutdown_byClass_PASS6_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>shutdown
+                     </div>
+                     <div>
+                        <b>Signature: </b>shutdown()[pri:0, instance:endtoend.SearchUser@5e5d171f]
+                     </div>
+                     <div>
+                        <b>Start time: </b>18:18:14
+                     </div>
+                     <div>
+                        <b>End time: </b>18:18:14
+                     </div>
+                     <div>
+                        <b>Duration: </b>125 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="endtoend.LoginUser_shutdown_byClass_PASS7_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('endtoend.LoginUser_shutdown_byClass_PASS7_details')">shutdown()</a>
+               </td>
+               <td nowrap="true">18:18:14</td>
+               <td nowrap="true" align="right">192 ms
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="endtoend.LoginUser_shutdown_byClass_PASS7_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>shutdown
+                     </div>
+                     <div>
+                        <b>Signature: </b>shutdown()[pri:0, instance:endtoend.SignUpUser@2a5c8d3f]
+                     </div>
+                     <div>
+                        <b>Start time: </b>18:18:14
+                     </div>
+                     <div>
+                        <b>End time: </b>18:18:15
+                     </div>
+                     <div>
+                        <b>Duration: </b>192 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+         </table>
+         <br></br>
+         <table class="testMethodsTable" cellpadding="0" cellspacing="0">
+            <tr>
+               <td colspan="4">
+                  <h3 style="display: inline;">endtoend.SearchUser</h3>
+               </td>
+            </tr>
+            <tr class="methodsTableHeader">
+               <td width="100%">Name</td>
+               <td nowrap="true">Started</td>
+               <td nowrap="true">Duration</td>
+               <td>Exception</td>
+            </tr>
+            <tr id="endtoend.SearchUser_getUserSearch_byClass_FAIL1_row"
+                class="testMethodStatusFAIL">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('endtoend.SearchUser_getUserSearch_byClass_FAIL1_details')">getUserSearch()</a>
+               </td>
+               <td nowrap="true">18:18:06</td>
+               <td nowrap="true" align="right">2s
+                  
+               </td>
+               <td nowrap="true">
+                  <a onclick="toggleDetailsVisibility('endtoend.SearchUser_getUserSearch_byClass_FAIL1_exception')">org.openqa.selenium.NoSuchElementException: 
+                     no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='mr-1']"}
+                     (Session info: chrome=83.0.4103.97)
+                     For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+                     Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+                     System info: host: 'JAY', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version:
+                     '13.0.1'
+                     Driver info: org.openqa.selenium.chrome.ChromeDriver
+                     Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion:
+                     83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\jayka\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58402},
+                     javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS,
+                     proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000},
+                     unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+                     Session ID: f1647b499e63bb5b6d74c32e5e2318e6
+                     *** Element info: {Using=xpath, value=//a[@class='mr-1']}
+                     
+                  </a>
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="endtoend.SearchUser_getUserSearch_byClass_FAIL1_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>getUserSearch
+                     </div>
+                     <div>
+                        <b>Signature: </b>getUserSearch()[pri:0, instance:endtoend.SearchUser@5e5d171f]
+                     </div>
+                     <div>
+                        <b>Start time: </b>18:18:06
+                     </div>
+                     <div>
+                        <b>End time: </b>18:18:09
+                     </div>
+                     <div>
+                        <b>Duration: </b>2s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="endtoend.SearchUser_getUserSearch_byClass_FAIL1_exception"
+                       class="testMethodDetails">
+                     <pre style="padding: 5px; margin: 0;">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='mr-1']"}
+                        (Session info: chrome=83.0.4103.97)
+                        For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+                        Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+                        System info: host: 'JAY', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version:
+                        '13.0.1'
+                        Driver info: org.openqa.selenium.chrome.ChromeDriver
+                        Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion:
+                        83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\jayka\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58402},
+                        javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS,
+                        proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000},
+                        unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+                        Session ID: f1647b499e63bb5b6d74c32e5e2318e6
+                        *** Element info: {Using=xpath, value=//a[@class='mr-1']}
+                        	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+                        	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+                        	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+                        	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+                        	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+                        	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+                        	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+                        	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+                        	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+                        	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+                        	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+                        	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+                        	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+                        	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+                        	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+                        	at pageobject.SearchPage.selectUser(SearchPage.java:28)
+                        	at endtoend.SearchUser.getUserSearch(SearchUser.java:39)
+                        	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                        	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+                        	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+                        	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+                        	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+                        	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+                        	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+                        	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+                        	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+                        	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+                        	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+                        	at org.testng.TestRunner.run(TestRunner.java:617)
+                        	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+                        	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+                        	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+                        	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+                        	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+                        	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+                        	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+                        	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+                        	at org.testng.TestNG.run(TestNG.java:1030)
+                        	at org.testng.TestNG.privateMain(TestNG.java:1337)
+                        	at org.testng.TestNG.main(TestNG.java:1306)
+                     </pre>
+                  </div>
+               </td>
+            </tr>
+            <tr id="endtoend.SearchUser_getValidateUserName_byClass_FAIL2_row"
+                class="testMethodStatusFAIL">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('endtoend.SearchUser_getValidateUserName_byClass_FAIL2_details')">getValidateUserName()</a>
+               </td>
+               <td nowrap="true">18:18:09</td>
+               <td nowrap="true" align="right">14 ms
+                  
+               </td>
+               <td nowrap="true">
+                  <a onclick="toggleDetailsVisibility('endtoend.SearchUser_getValidateUserName_byClass_FAIL2_exception')">org.openqa.selenium.NoSuchElementException: 
+                     no such element: Unable to locate element: {"method":"xpath","selector":"//span[@itemprop='additionalName']"}
+                     (Session info: chrome=83.0.4103.97)
+                     For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+                     Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+                     System info: host: 'JAY', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version:
+                     '13.0.1'
+                     Driver info: org.openqa.selenium.chrome.ChromeDriver
+                     Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion:
+                     83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\jayka\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58402},
+                     javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS,
+                     proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000},
+                     unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+                     Session ID: f1647b499e63bb5b6d74c32e5e2318e6
+                     *** Element info: {Using=xpath, value=//span[@itemprop='additionalName']}
+                     
+                  </a>
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="endtoend.SearchUser_getValidateUserName_byClass_FAIL2_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>getValidateUserName
+                     </div>
+                     <div>
+                        <b>Signature: </b>getValidateUserName()[pri:0, instance:endtoend.SearchUser@5e5d171f]
+                     </div>
+                     <div>
+                        <b>Start time: </b>18:18:09
+                     </div>
+                     <div>
+                        <b>End time: </b>18:18:09
+                     </div>
+                     <div>
+                        <b>Duration: </b>14 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="endtoend.SearchUser_getValidateUserName_byClass_FAIL2_exception"
+                       class="testMethodDetails">
+                     <pre style="padding: 5px; margin: 0;">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@itemprop='additionalName']"}
+                        (Session info: chrome=83.0.4103.97)
+                        For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+                        Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+                        System info: host: 'JAY', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version:
+                        '13.0.1'
+                        Driver info: org.openqa.selenium.chrome.ChromeDriver
+                        Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion:
+                        83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\jayka\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58402},
+                        javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS,
+                        proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000},
+                        unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+                        Session ID: f1647b499e63bb5b6d74c32e5e2318e6
+                        *** Element info: {Using=xpath, value=//span[@itemprop='additionalName']}
+                        	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+                        	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+                        	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+                        	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+                        	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+                        	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+                        	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+                        	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+                        	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+                        	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+                        	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+                        	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+                        	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+                        	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+                        	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+                        	at pageobject.SearchPage.getUsername(SearchPage.java:33)
+                        	at endtoend.SearchUser.getValidateUserName(SearchUser.java:46)
+                        	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                        	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+                        	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+                        	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+                        	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+                        	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+                        	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+                        	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+                        	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+                        	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+                        	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+                        	at org.testng.TestRunner.run(TestRunner.java:617)
+                        	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+                        	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+                        	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+                        	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+                        	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+                        	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+                        	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+                        	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+                        	at org.testng.TestNG.run(TestNG.java:1030)
+                        	at org.testng.TestNG.privateMain(TestNG.java:1337)
+                        	at org.testng.TestNG.main(TestNG.java:1306)
+                     </pre>
+                  </div>
+               </td>
+            </tr>
+         </table>
+         <br></br>
+         <table class="testMethodsTable" cellpadding="0" cellspacing="0">
+            <tr>
+               <td colspan="4">
+                  <h3 style="display: inline;">endtoend.SignUpUser</h3>
+               </td>
+            </tr>
+            <tr class="methodsTableHeader">
+               <td width="100%">Name</td>
+               <td nowrap="true">Started</td>
+               <td nowrap="true">Duration</td>
+               <td>Exception</td>
+            </tr>
+            <tr id="endtoend.SignUpUser_getUserSignUp_byClass_PASS1_row"
+                class="testMethodStatusPASS">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('endtoend.SignUpUser_getUserSignUp_byClass_PASS1_details')">getUserSignUp()</a>
+               </td>
+               <td nowrap="true">18:18:09</td>
+               <td nowrap="true" align="right">4s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="endtoend.SignUpUser_getUserSignUp_byClass_PASS1_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>getUserSignUp
+                     </div>
+                     <div>
+                        <b>Signature: </b>getUserSignUp()[pri:0, instance:endtoend.SignUpUser@2a5c8d3f]
+                     </div>
+                     <div>
+                        <b>Start time: </b>18:18:09
+                     </div>
+                     <div>
+                        <b>End time: </b>18:18:12
+                     </div>
+                     <div>
+                        <b>Duration: </b>4s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+         </table>
+         <br></br>
+      </div>
+      <div style="margin-top: 15px; color: gray; text-align: center; font-size: 9px;">
+         Generated with
+         
+         <a href="http://code.google.com/p/testng-xslt/" style="color: #8888aa;"
+            target="_blank">
+            TestNG XSLT
+            
+         </a>
+      </div>
+   </body>
+</html>

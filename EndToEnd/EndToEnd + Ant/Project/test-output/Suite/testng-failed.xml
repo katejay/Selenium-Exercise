@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]">
+  <test parallel="none" name="Test(failed)" preserve-order="true">
+    <classes>
+      <class name="endtoend.SignUpUser">
+        <methods>
+          <include name="initialize"/>
+          <include name="shutdown"/>
+        </methods>
+      </class> <!-- endtoend.SignUpUser -->
+      <class name="endtoend.SearchUser">
+        <methods>
+          <include name="getValidateUserName"/>
+          <include name="shutdown"/>
+          <include name="initialize"/>
+          <include name="getUserSearch"/>
+        </methods>
+      </class> <!-- endtoend.SearchUser -->
+      <class name="endtoend.LoginUser">
+        <methods>
+          <include name="shutdown"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- endtoend.LoginUser -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
